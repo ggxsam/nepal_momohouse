@@ -33,7 +33,7 @@ const Profile = () => {
         <div className="mt-5 space-y-4">
           <h1>Name:{user?.name}</h1>
           <p>Email:{user?.email}</p>
-          <p className="underline">Email Verification:{user?.email_verification}</p>
+          <p className="border-b-2 border-gray-400 pb-5">Email Verification:{user?.email_verification}</p>
 
           <button
           onClick={()=>{

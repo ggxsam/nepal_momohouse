@@ -10,6 +10,8 @@ import newmomo from "../assets/newmomo.png";
 import team1 from "../assets/team1.png";
 import team2 from "../assets/team2.png";
 import team3 from "../assets/team3.png";
+import { BsArrowRightShort } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const About = () => {
 
@@ -43,6 +45,13 @@ const About = () => {
           <p className="text-lg mt-2 ">
             See how we make momos that you like from only the best ingredients
           </p>
+          <NavLink
+                        className="bg-[#0C6967] mt-4 p-2  flex   justify-center items-center gap-x-1 w-50   rounded-3xl  text-white  "
+                        to="/menu"
+                      >
+                        Watch the Video
+                        <BsArrowRightShort size={32} className="mt-1" />
+                      </NavLink>
         </div>
       </div>
 

@@ -9,7 +9,7 @@ import { CartContext } from "../../Context/CartProvider";
 import { useAuth0 } from "@auth0/auth0-react";
 
 function Navigation() {
-  const { user, logout, isAuthenticated, isLoading } = useAuth0();
+  const { user, logout, isAuthenticated } = useAuth0();
   const { state } = useContext(CartContext);
   let totalItem = state.items.reduce((acc, product) => {
     return acc + product.qty;
